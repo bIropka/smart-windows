@@ -32,5 +32,7 @@ $(document).ready(function () {
         $(this).parents('form').find('.custom-checkbox:invalid').addClass('invalid-field');
         $(this).parents('form').find('.no-checked').removeClass('invalid-field');
     });
+    
+    
 
 });

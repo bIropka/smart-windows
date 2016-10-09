@@ -1,30 +1,18 @@
 @font-face {
-    font-family: 'Proxima Nova Regular';
-    src: url("../source/fonts/ProximaNovaRegular.woff") format("woff"), url("../source/fonts/ProximaNovaRegular.ttf") format("truetype");
+    font-family: 'Bicubik';
+    src: url("../source/fonts/Bicubik.woff") format("woff"), url("../source/fonts/Bicubik.ttf") format("truetype");
     font-weight: 300;
     font-style: normal;
 }
 @font-face {
-    font-family: 'Proxima Nova Bold';
-    src: url("../source/fonts/ProximaNovaBold.woff") format("woff"), url("../source/fonts/ProximaNovaBold.ttf") format("truetype");
+    font-family: 'Calibri';
+    src: url("../source/fonts/Calibri.woff") format("woff"), url("../source/fonts/Calibri.ttf") format("truetype");
     font-weight: 300;
     font-style: normal;
 }
 @font-face {
-    font-family: 'Proxima Nova Light';
-    src: url("../source/fonts/ProximaNovaLight.woff") format("woff"), url("../source/fonts/ProximaNovaLight.ttf") format("truetype");
-    font-weight: 300;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'PTSans Regular';
-    src: url("../source/fonts/PTSansRegular.woff") format("woff"), url("../source/fonts/PTSansRegular.ttf") format("truetype");
-    font-weight: 300;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'PTSans Bold';
-    src: url("../source/fonts/PTSansBold.woff") format("woff"), url("../source/fonts/PTSansBold.ttf") format("truetype");
+    font-family: 'Neometric Medium';
+    src: url("../source/fonts/Neometric-Medium.otf") format("opentype"), url("../source/fonts/Neometric-Medium.woff") format("woff"), url("../source/fonts/Neometric-Medium.ttf") format("truetype");
     font-weight: 300;
     font-style: normal;
 }
@@ -38,10 +26,10 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: 12px;
     line-height: 1.4;
-    color: #2b2b2b;
-    font-family: 'PTSans Regular', sans-serif;
+    font-family: 'Calibri', sans-serif;
+    color: #2d2d2d;
 }
 
 html, body {
@@ -49,7 +37,7 @@ html, body {
     width: 100%;
 }
 
-a, button, input[type="submit"], input[type="cancel"], input[type="reset"] {
+a, button {
     cursor: pointer;
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;
@@ -92,41 +80,34 @@ ul li, ol li {
 }
 
 h1 {
-    font-family: "Proxima Nova Light", sans-serif;
-    font-size: 2.1875em;
-    color: #ffffff;
-    font-weight: 100;
-    line-height: 1.2;
-}
-h1 span {
-    display: inline-block;
-    font-family: inherit;
-    font-size: inherit;
-    color: inherit;
-    font-weight: inherit;
-    line-height: inherit;
+    font-family: "Bicubic", sans-serif;
+    font-size: 1.666666666666667em;
+    font-weight: 300;
+    line-height: 1.3;
 }
 h2 {
-    font-size: 1.5625em;
-    font-weight: 100;
-    line-height: 1.2;
-}
-h3 {
-    font-family: 'PTSans Bold', sans-serif;
-    font-size: 1.0625em;
-    font-weight: 100;
-}
-button {
-    width: 200px;
-    height: 50px;
-    line-height: 50px;
-    font-family: 'PTSans Bold', sans-serif;
-    font-size: 12px;
-    color: #ffffff;
+    display: inline-block;
+    width: 100%;
+    font-size: 1.416666666666667em;
+    font-weight: 300;
+    line-height: 1;
+    text-align: center;
     text-transform: uppercase;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
+    padding: 23px 0 20px;
+    color: #ffffff;
+    background: #669933;
+    text-shadow: 2px 1px 1px #000;
+}
+
+button {
+    display: inline-block;
+    line-height: 1;
+    font-size: 12px;
+    text-transform: uppercase;
+    -webkit-box-shadow: inset 2px 2px 0 0 rgba(0,0,0,0.25), inset -2px -2px 0 0 rgba(0,0,0,0.25);
+    -moz-box-shadow: inset 2px 2px 0 0 rgba(0,0,0,0.25), inset -2px -2px 0 0 rgba(0,0,0,0.25);
+    box-shadow: inset 2px 2px 0 0 rgba(0,0,0,0.25), inset -2px -2px 0 0 rgba(0,0,0,0.25);
+    background: #669933;
 }
 .image-wrap {
     display: block;
@@ -138,6 +119,7 @@ button {
     display: block;
     height: 100%;
     width: auto;
+    min-width: 100%;
     position: absolute;
     top: 0;
     left: 0;
@@ -146,15 +128,16 @@ button {
 .wrapper {
     display: block;
     width: 100%;
-    max-width: 1220px;
+    max-width: 1200px;
     padding: 0 20px;
     position: relative;
     margin: 0 auto;
 }
-.wrapper:after {
-    content: '';
+
+section {
     display: block;
-    clear: both;
+    width: 100%;
+    position: relative;
 }
 
 .form-field:focus::-webkit-input-placeholder {color: transparent;}
@@ -170,28 +153,7 @@ button {
     border: 1px solid #ff0000!important;
 }
 
-.custom-checkbox {
-    display: none;
-}
-.custom-checkbox-wrap {
-    display: inline-block;
-    vertical-align: middle;
-    font-size: 0.8125em;
-    color: #bbbbbb;
-}
-.custom-checkbox-wrap:before {
-    content: '';
-    display: inline-block;
-    vertical-align: middle;
-    width: 20px;
-    height: 20px;
-    border: 1px solid #e1e1e1;
-    margin-right: 20px;
-}
-.custom-checkbox:checked + .custom-checkbox-wrap:before {
-    background: url('../source/images/icon-ok.png') no-repeat center;
-    background-size: cover;
-}
+
 .custom-checkbox.invalid-field + .custom-checkbox-wrap:before {
     border: 1px solid #ff0000;
 }
