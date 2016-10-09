@@ -164,19 +164,6 @@ header[role='banner']:after, section:after, footer[role='contentinfo'] {
 .form-field:-moz-placeholder {color: #2d2d2d;}
 .form-field:-ms-input-placeholder {color: #2d2d2d;}
 
-.validatr-message {
-    display: none;
-}
-
-.invalid-field {
-    border: 1px solid #ff0000!important;
-}
-
-
-.custom-checkbox.invalid-field + .custom-checkbox-wrap:before {
-    border: 1px solid #ff0000;
-}
-
 .slider-wrap {
     position: relative;
 }
