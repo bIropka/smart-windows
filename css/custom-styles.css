@@ -82,14 +82,16 @@ p {
 
 h1 {
     font-family: "Bicubik", sans-serif;
-    font-size: 2.3em;
+    font-size: 2em;
     font-weight: 300;
-    line-height: 1.3;
+    line-height: 1.6;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
 h2 {
     display: inline-block;
+    font-family: "Bicubik", sans-serif;
+    letter-spacing: 1px;
     width: 100%;
     font-size: 1.416666666666667em;
     font-weight: 300;
@@ -196,9 +198,9 @@ header[role='banner']:after, section:after, footer[role='contentinfo'] {
 
 .logo {
     display: block;
-    width: 220px;
+    width: 244px;
     float: left;
-    margin: 2.5% 0 3.333333333333333% 9%;
+    margin: 2.5% 0 3.333333333333333% 7.2%;
     position: relative;
     z-index: 1;
 }
@@ -227,6 +229,10 @@ header[role='banner']:after, section:after, footer[role='contentinfo'] {
 .header-contacts .social-links li {
     display: inline-block;
     vertical-align: middle;
+    margin-left: 5px;
+}
+.header-contacts .social-links li:first-child {
+    margin-left: 0;
 }
 .header-contacts .social-links li a {
     display: block;
@@ -292,18 +298,19 @@ nav ul li a {
 }
 .banner-top-inner h1 {
     position: absolute;
-    left: 10%;
-    right: 10%;
+    left: 15%;
+    right: 15%;
     bottom: 13%;
 }
 .banner-top-inner button {
-    width: 80%;
+    width: 70%;
     color: #ffffff;
-    padding: 12px 0 11px;
+    padding: 14px 0 13px;
     margin-top: 30%;
     position: absolute;
-    left: 10%;
+    left: 15%;
     bottom: 5%;
+    font-size: 1.1em;
 }
 .banner-top-inner button:hover {
     background: #508a15;
@@ -326,10 +333,11 @@ nav ul li a {
     font-family: "Bicubik", sans-serif;
     font-size: 1em;
     margin-bottom: 20px;
+    letter-spacing: 1px;
 }
 .form-order p span {
     font-family: "Bicubik", sans-serif;
-    font-size: 0.8em;
+    font-size: 0.75em;
 }
 .form-field-wrap {
     display: block;
@@ -374,6 +382,7 @@ nav ul li a {
     -moz-box-shadow: none;
     box-shadow: none;
     margin-top: 10px;
+    text-shadow: none;
 }
 .form-order button:hover {
     background: #eeeeee;
@@ -596,13 +605,13 @@ nav ul li a {
     font-family: "Bicubik", sans-serif;
     font-size: 1.15em;
     margin-left: 20px;
+    line-height: 40px;
 }
 .result-cost span {
     font-size: 1.2em;
 }
 .form-calculator button[type='submit'] {
-    width: 190px;
-    padding: 10px 0 10px;
+    padding: 13px 20px 12px;
     color: #ffffff;
     float: right;
 }
@@ -759,6 +768,7 @@ footer[role='contentinfo']:after {
     background: #99cccc;
     position: relative;
     margin-right: 60px;
+    text-shadow: none;
 }
 .in-touch button:hover {
     background: #75a5a5;
@@ -801,6 +811,10 @@ footer[role='contentinfo']:after {
         top: 0;
         bottom: 0;
         padding: 3% 5% 0;
+    }
+    .banner-top-inner h1 {
+        font-size: 2em;
+        line-height: 1.5;
     }
     .banner-top-inner h1, .banner-top-inner button {
         position: static;
